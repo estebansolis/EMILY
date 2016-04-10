@@ -10,5 +10,6 @@
 #define EMILYlingo_Bridging_Header_h
 
 //#import<EZAudio.h>
+#import "SWRevealViewController.h"
 
 #endif /* EMILYlingo_Bridging_Header_h */
