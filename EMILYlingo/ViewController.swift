@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import AVFoundation
+import SlideMenuControllerSwift
 
 class ViewController: UIViewController, AVAudioRecorderDelegate {//, EZMicrophoneDelegate {
     
