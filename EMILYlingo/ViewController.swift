@@ -55,7 +55,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {//, EZMicrophon
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent;
     }
-    
+
     //------------------------------------------------------------------------------
     // MARK: View Lifecycle
     //------------------------------------------------------------------------------
@@ -146,7 +146,9 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {//, EZMicrophon
     func startRecording(){
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let documentsDirectory = paths[0]
-        let audioFilename = documentsDirectory.stringByAppendingString("recording.m4a")
+        //let audioFilename = documentsDirectory.stringByAppendingString("recording.m4a")
+        let randomURL = "/"+String.random()
+        let audioFilename = documentsDirectory.stringByAppendingString(randomURL + ".m4a")
         audioURL = NSURL(fileURLWithPath: audioFilename)
         
         let settings = [
@@ -245,7 +247,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {//, EZMicrophon
                 default:
                     break;
                 }
-                let audioFileName = audioURL.absoluteString
+                let audioFileName = audioURL.lastPathComponent
                 dictionary["url"] = audioFileName
                 var phrase: Phrases!
                 phrase = Phrases(dictionary: dictionary)
@@ -277,4 +279,20 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {//, EZMicrophon
 //        });
 //    }
     
+}
+
+extension String {
+    
+    static func random(length: Int = 8) -> String {
+        
+        let base = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        var randomString: String = ""
+        
+        for _ in 0..<length {
+            let randomValue = arc4random_uniform(UInt32(base.characters.count))
+            randomString += "\(base[base.startIndex.advancedBy(Int(randomValue))])"
+        }
+        
+        return randomString
+    }
 }
