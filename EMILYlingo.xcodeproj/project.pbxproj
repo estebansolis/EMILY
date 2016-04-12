@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		548D90CB1CB7F09100760A93 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548D90CA1CB7F09100760A93 /* SWRevealViewController.m */; };
 		5F9EE9331CB376B000D1A925 /* PhrasesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EE9321CB376B000D1A925 /* PhrasesCell.swift */; };
 		5F9EE9361CB3782F00D1A925 /* PhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EE9351CB3782F00D1A925 /* PhrasesViewController.swift */; };
 		5F9EE9391CB37A8200D1A925 /* Phrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EE9381CB37A8200D1A925 /* Phrases.swift */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		101333F1ADA8B41DA1DFD9C3 /* Pods-EMILYlingo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMILYlingo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EMILYlingo/Pods-EMILYlingo.debug.xcconfig"; sourceTree = "<group>"; };
 		1876B29EC9C27F86E3CF2BD2 /* Pods_EMILYlingo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMILYlingo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		548D90C91CB7F09100760A93 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		548D90CA1CB7F09100760A93 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		5F9EE9321CB376B000D1A925 /* PhrasesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhrasesCell.swift; sourceTree = "<group>"; };
 		5F9EE9351CB3782F00D1A925 /* PhrasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhrasesViewController.swift; sourceTree = "<group>"; };
 		5F9EE9381CB37A8200D1A925 /* Phrases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phrases.swift; sourceTree = "<group>"; };
@@ -92,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		548D90C81CB7F04700760A93 /* SWRevealView */ = {
+			isa = PBXGroup;
+			children = (
+				548D90C91CB7F09100760A93 /* SWRevealViewController.h */,
+				548D90CA1CB7F09100760A93 /* SWRevealViewController.m */,
+			);
+			name = SWRevealView;
+			sourceTree = "<group>";
+		};
 		5F9EE9311CB3765600D1A925 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +157,7 @@
 		5FBB236C1CADD3DB00F59715 /* EMILYlingo */ = {
 			isa = PBXGroup;
 			children = (
+				548D90C81CB7F04700760A93 /* SWRevealView */,
 				5F9EE9371CB379EA00D1A925 /* Model */,
 				5F9EE9341CB377E400D1A925 /* Controllers */,
 				5F9EE9311CB3765600D1A925 /* Views */,
@@ -389,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548D90CB1CB7F09100760A93 /* SWRevealViewController.m in Sources */,
 				5F9EE9391CB37A8200D1A925 /* Phrases.swift in Sources */,
 				5FBB23761CADD3DB00F59715 /* EMILYlingo.xcdatamodeld in Sources */,
 				5FBB23701CADD3DB00F59715 /* ViewController.swift in Sources */,

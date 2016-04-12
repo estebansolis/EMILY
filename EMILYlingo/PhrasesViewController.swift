@@ -12,12 +12,17 @@ import RealmSwift
 class PhrasesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var phrases = [Phrases]()
+    
+    @IBOutlet weak var recordPageButton: UIBarButtonItem!
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     var dictionary: [String:String]!
     var phrase: Phrases!
     let realm = try! Realm()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         tableView.delegate = self
         tableView.dataSource = self
         tableView.sectionHeaderHeight = 0
@@ -30,8 +35,16 @@ class PhrasesViewController: UIViewController, UITableViewDataSource, UITableVie
         loadPhrases()
         tableView.reloadData()
         // Do any additional setup after loading the view.
+        
+        // slide bar menu
+        if revealViewController() != nil {
+            menuButton.target = revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
