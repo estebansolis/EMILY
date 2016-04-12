@@ -20,8 +20,6 @@ class PhrasesCell: UITableViewCell {
         didSet{
             phraseNameLabel.text = phrase.phraseName
             languageLabel.text = phrase.language
-            flagImage.image = UIImage(named: "usflag")
-            genderImage.image = UIImage(named: "male")
             timeLabel.text = phrase.time
 
         }
