@@ -235,7 +235,11 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {//, EZMicrophon
             if let destination = segue.destinationViewController as? PhrasesViewController {
                 dictionary["phraseName"] = nameField.text
                 dictionary["language"] = languageField.text
-                dictionary["time"] = String(30 - tempTimer)
+                if ((30-tempTimer) >= 10) {
+                    dictionary["time"] = "0:"+String(30-tempTimer)
+                }else{
+                    dictionary["time"] = "0:0"+String(30 - tempTimer)
+                }
                 
                 dictionary["flag"] = languageField.text
                 switch genderField.selectedSegmentIndex
