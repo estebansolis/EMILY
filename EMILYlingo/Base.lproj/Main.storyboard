@@ -87,7 +87,7 @@
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NpW-VU-Ozf"/>
-                                            <segue destination="1Ka-fe-enO" kind="push" identifier="segueIdentifer" id="m6i-NC-ybm"/>
+                                            <segue destination="Qro-tN-1Im" kind="push" identifier="" id="rsJ-KX-Efa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYr-rd-1Sp">
@@ -172,6 +172,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NZv-3K-ybS"/>
                     <connections>
                         <segue destination="1Ka-fe-enO" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="qDn-mI-Il7"/>
                         <segue destination="IoR-Wx-eKC" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="N1A-1l-6vY"/>
@@ -374,13 +375,6 @@
                                 <color key="textColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2V-qJ-Lhc">
-                                <rect key="frame" x="277" y="13" width="30" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="Bnf-Bb-Zql"/>
-                                </connections>
-                            </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rbq-2F-67O">
                                 <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                 <color key="barTintColor" red="0.88719434929999996" green="0.41887258649999998" blue="0.4462189218" alpha="1" colorSpace="calibratedRGB"/>
@@ -390,9 +384,6 @@
                         <color key="backgroundColor" red="0.88719434927112206" green="0.41887258651601744" blue="0.44621892177858002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Aqt-hj-95E" firstAttribute="top" secondItem="HHN-2h-ZJb" secondAttribute="bottom" id="0bp-yP-1Nu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="q2V-qJ-Lhc" secondAttribute="trailing" constant="-7" id="5KY-hO-Qs9"/>
-                            <constraint firstItem="q2V-qJ-Lhc" firstAttribute="leading" secondItem="fPP-Hl-Wrc" secondAttribute="trailing" constant="33" id="DAU-jX-Fal"/>
-                            <constraint firstItem="q2V-qJ-Lhc" firstAttribute="top" secondItem="iZe-xt-8za" secondAttribute="top" constant="13" id="Fmf-1p-MZ5"/>
                             <constraint firstAttribute="trailing" secondItem="HHN-2h-ZJb" secondAttribute="trailing" id="JcD-Xi-5mY"/>
                             <constraint firstItem="fPP-Hl-Wrc" firstAttribute="top" secondItem="kLW-Kh-FNj" secondAttribute="bottom" constant="-50" id="MdM-61-i0l"/>
                             <constraint firstItem="fPP-Hl-Wrc" firstAttribute="centerX" secondItem="iZe-xt-8za" secondAttribute="centerX" id="Mro-1s-sqt"/>
@@ -406,7 +397,11 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="EMILYlingo" id="5nh-ta-pUy">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="u5e-Io-9rd"/>
-                        <barButtonItem key="rightBarButtonItem" image="record" id="u0L-Az-WQF"/>
+                        <barButtonItem key="rightBarButtonItem" image="record" id="u0L-Az-WQF">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="push" id="4dn-VT-tbY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -426,26 +421,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1642" y="732"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eQ6-zk-eEY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="GpH-O7-kbi" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n9g-VE-mqJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DhO-lz-b0A"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Frw-S0-CLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="146" y="348"/>
+            <point key="canvasLocation" x="1642" y="694"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rh1-Oe-LAn">
@@ -475,8 +451,4 @@
         <image name="record" width="30" height="30"/>
         <image name="usflag" width="160" height="160"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="m6i-NC-ybm"/>
-        <segue reference="Bnf-Bb-Zql"/>
-    </inferredMetricsTieBreakers>
 </document>

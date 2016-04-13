@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540460E71CBDB40500052F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540460E51CBDB40500052F46 /* Main.storyboard */; };
 		548D90CB1CB7F09100760A93 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548D90CA1CB7F09100760A93 /* SWRevealViewController.m */; };
 		5F9EE9331CB376B000D1A925 /* PhrasesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EE9321CB376B000D1A925 /* PhrasesCell.swift */; };
 		5F9EE9361CB3782F00D1A925 /* PhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EE9351CB3782F00D1A925 /* PhrasesViewController.swift */; };
@@ -20,7 +21,6 @@
 		5FBB23911CADD3DC00F59715 /* EMILYlingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBB23901CADD3DC00F59715 /* EMILYlingoUITests.swift */; };
 		E6C2A2C31CB0934900E3C142 /* RecordingOn.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C2A2C11CB0934900E3C142 /* RecordingOn.png */; };
 		E6C2A2C41CB0934900E3C142 /* RecordOff.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C2A2C21CB0934900E3C142 /* RecordOff.png */; };
-		EEF8E0011CB6FA3C0091317B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF8DFFF1CB6FA3C0091317B /* Main.storyboard */; };
 		FD1489B717F4A769A962D10C /* Pods_EMILYlingo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1876B29EC9C27F86E3CF2BD2 /* Pods_EMILYlingo.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +44,7 @@
 /* Begin PBXFileReference section */
 		101333F1ADA8B41DA1DFD9C3 /* Pods-EMILYlingo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMILYlingo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EMILYlingo/Pods-EMILYlingo.debug.xcconfig"; sourceTree = "<group>"; };
 		1876B29EC9C27F86E3CF2BD2 /* Pods_EMILYlingo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMILYlingo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		540460E61CBDB40500052F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		548D90C91CB7F09100760A93 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		548D90CA1CB7F09100760A93 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		5F9EE9321CB376B000D1A925 /* PhrasesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhrasesCell.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		AB3020E61C59B24E2A80E79E /* Pods-EMILYlingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMILYlingo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMILYlingo/Pods-EMILYlingo.release.xcconfig"; sourceTree = "<group>"; };
 		E6C2A2C11CB0934900E3C142 /* RecordingOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingOn.png; sourceTree = "<group>"; };
 		E6C2A2C21CB0934900E3C142 /* RecordOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordOff.png; sourceTree = "<group>"; };
-		EEF8E0001CB6FA3C0091317B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 		5F9EE9311CB3765600D1A925 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EEF8DFFF1CB6FA3C0091317B /* Main.storyboard */,
+				540460E51CBDB40500052F46 /* Main.storyboard */,
 				5FBB23791CADD3DC00F59715 /* LaunchScreen.storyboard */,
 				5F9EE9321CB376B000D1A925 /* PhrasesCell.swift */,
 			);
@@ -326,7 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C2A2C41CB0934900E3C142 /* RecordOff.png in Resources */,
-				EEF8E0011CB6FA3C0091317B /* Main.storyboard in Resources */,
+				540460E71CBDB40500052F46 /* Main.storyboard in Resources */,
 				E6C2A2C31CB0934900E3C142 /* RecordingOn.png in Resources */,
 				5FBB237B1CADD3DC00F59715 /* LaunchScreen.storyboard in Resources */,
 				5FBB23781CADD3DB00F59715 /* Assets.xcassets in Resources */,
@@ -444,20 +444,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		540460E51CBDB40500052F46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540460E61CBDB40500052F46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		5FBB23791CADD3DC00F59715 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5FBB237A1CADD3DC00F59715 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		EEF8DFFF1CB6FA3C0091317B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEF8E0001CB6FA3C0091317B /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
